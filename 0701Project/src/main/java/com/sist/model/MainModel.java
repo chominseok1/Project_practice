@@ -23,6 +23,16 @@ public class MainModel {
 		List<ShareVO> slist=sdao.randomShareList();
 		
 		request.setAttribute("slist", slist);
+		
+		
+		//맛집 랜덤 출력
+		FoodDAO fdao=FoodDAO.newInstance();
+		List<FoodVO> flist=fdao.randomFoodList();
+		request.setAttribute("flist", flist);
+		// 상점 랜덤 출력
+		ProductDAO pdao=ProductDAO.newInstance();
+		List<ProductVO> plist=pdao.randomProductList();
+		request.setAttribute("plist", plist);
 		request.setAttribute("main_jsp", "../jsp/home.jsp");
 		return "../jsp/main.jsp";
 	}

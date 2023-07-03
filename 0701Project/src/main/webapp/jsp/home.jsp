@@ -82,21 +82,31 @@
             </div>
         </div>
         <div class="row tm-mb-90 tm-gallery">
+        	<c:forEach var="flist" items="${flist }">
         	<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-              	  <a href="single-post.html">
-                    <img src="../assets/imgs/img-03.jpg" alt="Image" class="img-fluid rounded">
+              	  <a href="#">
+                    <img src="${flist.poster }" alt="Image" class="img-fluid rounded" style="width:250px; height:150px; border-radius:20px;">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Clocks</h2>
+                         <h2>
+                        <c:if test="${flist.title.length()>10 }">
+                          	 ${flist.title.substring(0,10) }
+                          </c:if>
+                       
+                          <c:if test="${flist.title.length()<10 }">
+                          	 ${flist.title }
+                          </c:if>
+                        </h2>
                        
                     </figcaption>   
-                     View more</a>                 
+                     e</a>                 
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">18 Oct 2020</span>
-                    <span>9,906 views</span>
+                	<span>${flist.score }</span> 	 
+                    <span>${flist.price }</span>
                 </div>
             </div>  
+            </c:forEach> 
         </div> <!-- row -->
         <div class="row tm-mb-90">
             <!-- <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
@@ -183,21 +193,31 @@
             </div>
         </div>
         <div class="row tm-mb-90 tm-gallery">
+        	<c:forEach var="plist" items="${plist }">
         	<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-              	  <a href="single-post.html">
-                    <img src="../assets/imgs/img-03.jpg" alt="Image" class="img-fluid rounded">
+              	  <a href="#">
+                    <img src="${plist.poster }" alt="Image" class="img-fluid rounded" style="width:250px; height:150px; border-radius:20px;">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Clocks</h2>
+                         <h2>
+                        <c:if test="${plist.title.length()>10 }">
+                          	 ${plist.title.substring(0,10) }
+                          </c:if>
+                       
+                          <c:if test="${plist.title.length()<10 }">
+                          	 ${plist.title }
+                          </c:if>
+                        </h2>
                        
                     </figcaption>   
-                     View more</a>                 
+                     e</a>                 
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">18 Oct 2020</span>
-                    <span>9,906 views</span>
+                	<span>${plist.score }</span> 	 
+                    <span>${plist.first_pri }</span>
                 </div>
             </div>  
+            </c:forEach> 
         </div> <!-- row -->
         <div class="row tm-mb-90">
            <!--  <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
@@ -233,11 +253,11 @@
               	  <a href="../share/shareDetail.do?skdno=${slist.skdno }">
                     <img src="${slist.poster }" alt="Image" class="img-fluid rounded" style="width:250px; height:150px; border-radius:20px;">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>
+                         <h2>
                         <c:if test="${slist.title.length()>10 }">
                           	 ${slist.title.substring(0,10) }
                           </c:if>
-                        
+                       
                           <c:if test="${slist.title.length()<10 }">
                           	 ${slist.title }
                           </c:if>
