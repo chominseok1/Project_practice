@@ -8,7 +8,7 @@
 </head>
 <body>
  <nav class="navbar navbar-light bg-light">
-        <div class="container">
+<!--         <div class="container"> -->
             <a class="navbar-brand" href="../jsp/main.do">
                 <img src="../assets/imgs/logo.png" alt="">
             </a>
@@ -19,7 +19,7 @@
                 <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
                 <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
             </div>
-        </div>
+<!--         </div> -->
     </nav> 
     <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
         <div class="container">
