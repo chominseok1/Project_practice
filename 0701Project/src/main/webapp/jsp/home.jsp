@@ -233,11 +233,11 @@
               	  <a href="../share/shareDetail.do?skdno=${slist.skdno }">
                     <img src="${slist.poster }" alt="Image" class="img-fluid rounded" style="width:250px; height:150px; border-radius:20px;">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        
+                        <h2>
                         <c:if test="${slist.title.length()>10 }">
                           	 ${slist.title.substring(0,10) }
                           </c:if>
-                        <h2>
+                        
                           <c:if test="${slist.title.length()<10 }">
                           	 ${slist.title }
                           </c:if>
