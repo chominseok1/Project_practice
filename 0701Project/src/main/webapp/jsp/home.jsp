@@ -78,7 +78,7 @@
                 <!-- <form action="" class="tm-text-primary">
                     Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 200
                 </form> -->
-                <a href="#">더보기</a>
+                <a href="../food/foodList.do">더보기</a>
             </div>
         </div>
         <div class="row tm-mb-90 tm-gallery">
