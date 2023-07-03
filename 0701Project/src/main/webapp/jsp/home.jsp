@@ -72,7 +72,7 @@
         <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
-                맛집
+                Restaurant
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <!-- <form action="" class="tm-text-primary">
@@ -124,7 +124,7 @@
     <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
-                레시피
+                Recipe
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <!-- <form action="" class="tm-text-primary">
@@ -183,7 +183,7 @@
     <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
-                주방용품
+                Shopping
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <!-- <form action="" class="tm-text-primary">
@@ -236,7 +236,7 @@
         <div class="row mb-4">
         
             <h2 class="col-6 tm-text-primary">
-                공유주방
+                ShareKitchen
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <!-- <form action="" class="tm-text-primary">
